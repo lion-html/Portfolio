@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lion — HTML/CSS Верстка</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">Lion<span>.</span></div>
+
+      <nav class="nav">
+        <a href="#projects">Проекты</a>
+        <a href="#services">Услуги</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>HTML/CSS верстка <br><span>адаптив + аккуратно</span></h1>
+          <p>
+            Делаю лендинги, карточки товаров, исправляю ошибки в верстке (flex, отступы, адаптив).
+            Быстро отвечаю и сдаю работу в срок.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="btn" href="#contacts">Написать мне</a>
+            <a class="btn btn--ghost" href="#projects">Смотреть проекты</a>
+          </div>
+
+          <div class="badges">
+            <span>✅ Адаптив</span>
+            <span>✅ Flexbox</span>
+            <span>✅ Pixel perfect</span>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="mini">
+            <div class="mini__title">Что я делаю</div>
+            <ul class="mini__list">
+              <li>Лендинги по макету (Figma)</li>
+              <li>Правки на сайте</li>
+              <li>Мобильная адаптация</li>
+              <li>Верстка блоков (карточки, меню)</li>
+            </ul>
+          </div>
+
+          <div class="mini mini--dark">
+            <div class="mini__title">Сроки</div>
+            <p class="mini__p">Правки — от 1 часа. Лендинг — 1–3 дня.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Проекты</h2>        
+
+        <div class="grid">
+          <article class="project">
+            <div class="project__img">Project 01</div>
+            <div class="project__body">
+              <h3>Fashion Landing</h3>
+              <p>Лендинг магазина одежды: hero, товары, footer. Адаптив.</p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>Responsive</span>
+              </div>
+              <div class="links">
+                <a href="./Landingpage/Homepage.html" target="_blank" class="demo-btn">Demo</a>
+                <a href="#contacts" class="contact-btn">Contact</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__img">Project 02</div>
+            <div class="project__body">
+              <h3>Product Cards</h3>
+              <p>Карточки товаров, сетка, hover-эффекты, mobile-first.</p>
+              <div class="tags">
+                <span>Flex</span><span>Grid</span><span>UI</span>
+              </div>
+              <div class="links">
+                <a href="./ProductCards/productindex.html" target="_blank" class="demo-btn">Demo</a>
+                <a href="#contacts" class="contact-btn">Contact</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__img">Project 03</div>
+            <div class="project__body">
+              <h3>Adaptive Menu</h3>
+              <p>Навигация: desktop + мобильная версия.</p>
+              <div class="tags">
+                <span>Layout</span><span>Adaptive</span><span>CSS</span>
+              </div>
+              <div class="links">
+                <a href="./Adaptivemenu/adaptive.html" target="_blank" class="demo-btn">Demo</a>
+                <a href="#contacts" class="contact-btn">Contact</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--soft">
+      <div class="container">
+        <h2>Услуги</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Правки HTML/CSS</h3>
+            <p>Исправлю верстку, отступы, flex, адаптив. Быстро.</p>
+            <div class="price">от $5</div>
+          </div>
+          <div class="service">
+            <h3>Адаптив под мобильные</h3>
+            <p>Сделаю чтобы сайт нормально выглядел на телефоне и планшете.</p>
+            <div class="price">от $20</div>
+          </div>
+          <div class="service">
+            <h3>Лендинг по макету</h3>
+            <p>Верстка по Figma / картинке. Чистый код, структура, классы.</p>
+            <div class="price">от $50</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <p class="sub">Напиши мне — отвечу быстро.</p>
+
+        <div class="contacts">
+          <a class="contact" href="#" target="_blank">💬 Telegram: @lionhtml</a>
+          <a class="contact" href="#" target="_blank">💼 GitHub: github.com/lion-html</a>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Lion</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

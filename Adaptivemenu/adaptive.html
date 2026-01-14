@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adaptive Menu</title>
+  <link rel="stylesheet" href="./adaptive.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#">Lion<span>.</span></a>
+
+      <!-- Desktop nav -->
+      <nav class="nav nav--desktop" aria-label="Main navigation">
+        <a class="nav__link is-active" href="#home">Home</a>
+        <a class="nav__link" href="#catalog">Catalog</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#reviews">Reviews</a>
+        <a class="nav__link" href="#contacts">Contact</a>
+      </nav>
+
+      <!-- Burger -->
+      <button class="burger" id="burger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Mobile drawer -->
+  <aside class="drawer" id="mobileMenu" aria-label="Mobile menu">
+    <div class="drawer__top">
+      <div class="drawer__title">Menu</div>
+      <button class="close" id="closeBtn" aria-label="Close menu">✕</button>
+    </div>
+
+    <nav class="nav nav--mobile">
+      <a class="nav__link is-active" href="#home">Home</a>
+      <a class="nav__link" href="#catalog">Catalog</a>
+      <a class="nav__link" href="#about">About</a>
+      <a class="nav__link" href="#reviews">Reviews</a>
+      <a class="nav__link" href="#contacts">Contact</a>
+    </nav>
+
+    <div class="drawer__bottom">
+      <a class="cta" href="#contacts">Write in Telegram</a>
+      <p class="hint">Нажми на пункт меню — drawer закроется автоматически.</p>
+    </div>
+  </aside>
+
+  <!-- CONTENT (для демонстрации) -->
+  <main class="main">
+    <section id="home" class="section">
+      <div class="container">
+        <h1>Adaptive Menu</h1>
+        <p>Desktop меню + мобильное drawer-меню (burger). Есть overlay, закрытие по клику, активные ссылки.</p>
+      </div>
+    </section>
+
+    <section id="catalog" class="section section--soft">
+      <div class="container">
+        <h2>Catalog</h2>
+        <p>Секция для демонстрации переходов.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>Секция для демонстрации.</p>
+      </div>
+    </section>
+
+    <section id="reviews" class="section section--soft">
+      <div class="container">
+        <h2>Reviews</h2>
+        <p>Секция для демонстрации.</p>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>💬 Telegram : @lionhtml</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./adaptive.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+
+.logo {
+    color: blueviolet;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a.homepage {
+    color: rgb(169, 114, 219);
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 850px;
+    background-image: url("./Ablojkiaxjik.jpg");
+    background-position: 50% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    width: 100%;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-right {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner-right p {
+    text-indent: 40px;
+}
+
+.banner-right h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.banner-right button {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 100px;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 30px;
+    font-size: 14px;
+}
+
+.banner-right button:hover {
+    background: white;
+    color: black;
+}
+
+.arkapatverov {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arka a {
+    text-decoration: none;
+    color: black;
+}
+
+.arka a:hover {
+    color: blueviolet;
+}
+
+.patverov a {
+    text-decoration: none;
+    color: black;
+}
+
+.patverov a:hover {
+    color: blueviolet;
+}
+
+.asortiment {  
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+
+.child1 {
+    background-image: url("./1.jpg");
+}
+
+.child2 {
+    background-image: url("./2\ .jpg");
+}
+
+.child3 {
+    background-image: url("./3.jpg");
+}
+
+.child4 {
+    background-image: url("./4.jpg");
+}
+
+.child5 {
+    background-image: url("./5.png");
+}
+
+.child6 {
+    background-image: url("./6.jpg");
+}
+
+.child1,
+.child2,
+.child3,
+.child4,
+.child5,
+.child6 {
+  border-radius: 12px;
+  overflow: hidden;  
+  aspect-ratio: 4 / 5;      
+  min-height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; 
+  color: #fffefe;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;  
+  padding: 18px;  
+  position: relative;
+}
+
+.asortiment > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0) 55%);
+}
+
+
+.asortiment > div {
+  position: relative;
+}
+.asortiment > div > * {
+  position: relative;
+  z-index: 1;
+}
+
+.asortiment > div {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  will-change: transform;
+}
+
+
+.asortiment > div:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.18);
+}
+
+
+@media (hover: none) {
+  .asortiment > div:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.tesnelbolor {
+    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.tesnelbolor a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.tesnelbolor img {
+  max-width: min(420px, 100%);
+  height: auto;
+  display: block;
+}
+
+.aboutus {
+    margin-top: 30px;
+    background-image: url("./takinkar.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+}
+
+.aboutus span {
+    display: flex;
+    font-size: 16px;
+    width: 570px;
+    height: 75px;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.aboutus p {
+    display: flex;
+    font-size: 16px;
+    width: 570px;
+    height: 75px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.foother {
+    background-color: #4B3A63;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 65px;
+}
+
+#mozefoother {
+    width: 280px;
+    height: 85px;
+    background-repeat: no-repeat;
+}
+
+.navfooterparent {
+    display: flex;
+    gap: 30px;
+}
+
+#navfoothers {
+    display: block;
+    color: white;
+    text-align: center;
+    gap: 10px;
+}
+
+#navfoothers a {
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 6px;
+}
+
+.contacts {
+    margin-top: 15px;
+    width: 170px;
+    height: 120px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    display: block;
+}
+
+.findus {
+    margin-top: 15px;
+    color: white;
+}
+
+.findus a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    line-height: 25px;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .banner {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .banner-right {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .banner-right h1 {
+    font-size: 28px;
+  }
+
+  .banner-right button {
+    margin-left: 0;
+  }
+
+  .arkapatverov {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .child1,
+  .child2,
+  .child3,
+  .child4,
+  .child5,
+  .child6 {
+    width: 100%;
+    height: 360px;
+    padding-top: 300px;
+  }
+
+  .aboutus {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .aboutus span,
+  .aboutus p {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .foother {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .navfooterparent {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .banner-content {
+    padding: 0 40px;
+  }
+
+  .child1,
+  .child2,
+  .child3,
+  .child4,
+  .child5,
+  .child6 {
+    width: 45%;
+    height: 420px;
+    padding-top: 350px;
+  }
+
+  .aboutus span,
+  .aboutus p {
+    width: 80%;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .asortiment {
+    gap: 16px;
+    padding: 0 14px;
+  }
+
+  .asortiment > div {
+    font-size: 18px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .asortiment {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .asortiment {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
